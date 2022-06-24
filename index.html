@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/icon.jpg">
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <header>
+        <div class = "menu_side">
+            <h1>PLaylist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4 ><span></span><i class="bi bi-music-note-beamed"></i><a href="file:///C:/Users/Payin%20Winful/Documents/Music%20player/Last%20Listening.html">Last Listening</a></h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i><a href="file:///C:/Users/Payin%20Winful/Documents/Music%20player/Recommended.html">Recommended</a></h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem" id="first_part">
+                    <span>01</span>
+                    <img src="./img/JZ.jpg" alt="JZ">
+                    <h5>
+                        Young Forever
+                        <div class="subtitle">Jay Z</div>
+                        </h5>
+                        <button onclick="no1()" id="index1"><i class="fa fa-play" aria-hidden="true"></i></button>
+
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="./img/NA.jpg" alt="Eminem" id="NA">
+                    <h5>
+                        Not Afraid
+                        <div class="subtitle">Eminem</div>
+                        </h5>
+                        <button id="index2" onclick="no2()"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="./img/GOM.jpg" alt="Pop Smoke">
+                    <h5>
+                        Got It On Me
+                        <div class="subtitle">Pop Smoke</div>
+                        </h5>
+                        <button id="index3" onclick="no3()"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="img/NR.jpg" alt="J Cole">
+                    <h5>
+                        No Role Modelz
+                        <div class="subtitle">Jay Z</div>
+                        </h5>
+                        <button id="index4" onclick="no4()"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="img/CM.jpg" alt="Arrdee">
+                    <h5>
+                        Come & Go
+                        <div class="subtitle">Arrdee</div>
+                        </h5>
+                        <button id="index5" onclick="no5()"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="img/L.jpg" alt="Dave">
+                    <h5>
+                        Location
+                        <div class="subtitle">Dave ft Burna Boy</div>
+                        </h5>
+                        <button id="index6" onclick="no6()"><i class="fa fa-play" aria-hidden="true"></i></button>
+                   
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="img/L.jpg" alt="Dave">
+                    <h5>
+                        Location
+                        <div class="subtitle">Dave ft Burna Boy</div>
+                        </h5>
+                        <button id="index7"><i class="fa fa-play" aria-hidden="true"></i></button>
+                   
+                </li>
+            </div>
+        </div>  
+        
+        
+        <div class = "song_side">
+            <nav>
+                <ul>
+                    <li>Discover</li>
+                    <!-- <li>My Library</li> -->
+                    <li>Radio</li>
+            </ul>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="search Music...">
+            </div>
+            <div class="user">
+                <img src="JC.jpg" alt="User" title="Payin">
+            </div>
+            </nav>
+            <div class="content">
+                <h1>Jay Z</h1>
+                <p>
+                    Can I get some light in here?
+                    <br>
+                    Cellphones in the air
+                </p>
+                <div class="buttons">
+                    <button>PLAY</button>
+                    <button id="b2" onclick="follow()">FOLLOW</button>
+                </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular song</h4>
+                    <div class="btn_s">
+                        <i id = "left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id = "right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="./img/JZ.jpg" alt="JZ" onclick="no1()">
+                            <!-- <i class="fa fa-play" aria-hidden="true"></i> -->
+                        </div>
+                        <h5>Young Forever
+                            <br>
+                            <div class="subtitle">Jay Z</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="./img/NA.jpg" alt="JZ" onclick="no2()">
+                            <!-- <i class="fa fa-play" aria-hidden="true" id="index9"></i> -->
+                        </div>
+                        <h5>Not Afraid
+                            <br>
+                            <div class="subtitle">Jay Z</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/GOM.jpg" alt="Pop Smoke" onclick="no3()">
+                            <!-- <i class="fa fa-play" aria-hidden="true" id="index10"></i> -->
+                        </div>
+                        <h5>Got It On ME
+                            <br>
+                            <div class="subtitle">Pop Smoke</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/NR.jpg" alt="JZ" onclick="no4()">
+                            <!-- <i class="fa fa-play" aria-hidden="true" id="index11"></i> -->
+                        </div>
+                        <h5>No Role Modelz
+                            <br>
+                            <div class="subtitle">Jay Z</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/CM.jpg" alt="JZ" onclick="no5()">
+                            <!-- <i class="fa fa-play" aria-hidden="true" id="index12"></i> -->
+                        </div>
+                        <h5>Come & Go
+                            <br>
+                            <div class="subtitle">Jay Z</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/L.jpg" alt="JZ" onclick="no6()">
+                            <!-- <i class="fa fa-play" aria-hidden="true" id="index13"></i> -->
+                        </div>
+                        <h5>Location
+                            <br>
+                            <div class="subtitle">Jay Z</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <div class="popular_artist">
+                <div class="h4">
+                    <h4>Popular Artist</h4>
+                    <div class="btn_s">
+                        <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="Jay Z.jpg" alt="Jay Z" title="Jay Z">
+                    </li>
+                    <li>
+                        <img src="EM.jpg" alt="Eminem" title="Eminem">
+                    </li>
+                    <li>
+                        <img src="RH.jpg" alt="Rihana" title="Rihana">
+                    </li>
+                    <li>
+                        <img src="JC.jpg" alt="J Cole" title="J Cole">
+                    </li>
+                    <li>
+                        <img src="KY.JPG" alt="Kanye West" title="Kanye West">
+                    </li>
+                    <li>
+                        <img src="DR.jpg" alt="Drake" title="Drake">
+                    </li>
+                    <li>
+                        <img src="DV.jpg" alt="Dave" title="Dave">
+                    </li>
+                    <li>
+                        <img src="BB.jpg" alt="Burna Boy" title="Burna Boy">
+                    </li>
+                    <li>
+                        <img src="NM.jpg" alt="Nikki Minaj" title="Nikki Minaj">
+                    </li>
+                    <li>
+                        <img src="A.jpg" alt="Aitch" title="Aitch">
+                    </li>
+                    <li>
+                        <img src="PS.jpg" alt="Pop Smoke" title="Pop Smoke">
+                    </li>
+                    <li>
+                        <img src="S.jpg" alt="Stormzy" title="Stormzy">
+                    </li>
+                    <li>
+                        <img src="KL.jpg" alt="kendrick Lamar" title="kendrick Lamar">
+                    </li>
+                    <!--CHANGE ALL IMAGE-->
+                </div>
+            </div>
+        </div>
+
+
+        <div class = "master_play">
+            <div class="wave">
+                <div class="wave1" id="wave1"></div>
+                <div class="wave1" id="wave2"></div>
+                <div class="wave1" id="wave3"></div>
+            </div>
+            <img src="JZ.jpg" alt="JZ" id="track_image">
+            <p id="title">title.mp3</p>
+            <br>
+            <p id="artist">Artist name</p>
+            <div class="middle" id="middle">
+                <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+            </div>
+            <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()" class="slider">
+           </div>
+           <div class="volume">
+                <p id="volume_show">90</p>
+                <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+                <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+            </div>
+            <!-- <button id="auto" onclick="autoplay_switch()"><i class="fa fa-circle-o-notch" aria-hidden="true"></i></button> -->
+        </div>
+    </header>
+        <script src="test.js"></script>
+</body>
+
+
+</html> 
